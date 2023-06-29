@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnjon2oh6h4u4"]
+
+[ext_resource type="PackedScene" uid="uid://7cjjxmh0ocqh" path="res://duck.tscn" id="1_17uti"]
+[ext_resource type="PackedScene" uid="uid://btp48tuirs2pt" path="res://gun.tscn" id="2_imj7a"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Duck" parent="." instance=ExtResource("1_17uti")]
+transform = Transform3D(0.999995, 0, 0.00326376, 0, 1, 0, -0.00326376, 0, 0.999995, 0.288667, 0, -5.57198)
+
+[node name="Gun" parent="." instance=ExtResource("2_imj7a")]
+transform = Transform3D(0.844, 0.411505, -0.343986, 0, -0.641356, -0.767244, -0.536343, 0.647554, -0.541305, 0.414955, -0.390621, -0.763613)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+omni_range = 18.4867
