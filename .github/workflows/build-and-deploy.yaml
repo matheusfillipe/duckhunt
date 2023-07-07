@@ -18,6 +18,8 @@ jobs:
 
       - name: test
         run: ls /root/.local/share/godot/templates/
+      - name: listTemplates
+        run: ls /root/.local/share/godot/templates/*/
       - name: Setup
         run: |
           mkdir -v -p ~/.local/share/godot/templates
